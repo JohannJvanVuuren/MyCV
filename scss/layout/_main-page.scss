@@ -1,0 +1,110 @@
+.name {
+  .name-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100rem;
+    height: 80vh;
+    margin: 0 auto;
+    padding-top: 5rem;
+
+    img {
+      grid-area: 'image';
+      width: 15rem;
+      height: auto;
+      align-self: center;
+    }
+  }
+}
+
+.bio-container {
+  padding: 10rem 0;
+  margin: 0 auto;
+  width: 75rem;
+}
+
+.interests {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .interests-container {
+    width: 75rem;
+    padding: 5rem;
+  }
+}
+
+.employment-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10rem 0;
+
+  td {
+    width: 50%;
+  }
+}
+
+.education {
+  display: grid;
+  place-items: center;
+
+  .education-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 5rem;
+  }
+}
+
+.skills {
+  display: grid;
+  place-items: center;
+
+  .skills-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+}
+
+.contact {
+  display: grid;
+  place-items: center;
+
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 75rem;
+    height: 30rem;
+
+    .contact-details {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      width: 100%;
+
+      div {
+        display: grid;
+        place-items: center;
+      }
+    }
+
+    .social-media {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      height: 40rem;
+      
+    
+
+    }
+  }
+}

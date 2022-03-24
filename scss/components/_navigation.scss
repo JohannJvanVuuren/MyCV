@@ -1,0 +1,16 @@
+nav {
+
+  .navbar {
+    z-index: 10;
+
+    a {
+      border-radius: 1rem;
+      padding: 1rem;
+    }
+  }
+
+  .hamburger-navbar {
+    cursor: pointer;
+    z-index: 10;
+  }
+}

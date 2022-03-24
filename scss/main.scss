@@ -1,0 +1,15 @@
+//Please note that the SASS 7-1 Architecture system is used in this website
+
+@import 'abstracts/animations';
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
+@import 'base/resets';
+@import 'base/typography';
+
+@import 'components/navigation';
+
+@import 'layout/main-page';
+@import 'layout/navigation';
+
+@import 'pages/landing-page';

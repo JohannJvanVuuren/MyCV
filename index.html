@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Johann</title>
+    <!-- Google Font link for Lato and Merriweather fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,400&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- Font Awesome Script link -->
+    <script src="https://kit.fontawesome.com/ffc4ae6340.js" crossorigin="anonymous"></script>
+    <!-- jQuery CDN link via Google -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js/main.js"></script>
+  </head>
+
+  <body>
+    <!-- Main navigation bar that appears when the hamburger icon is clicked. Ref main.js -->
+    <nav>
+      <div class="hamburger-navbar">
+        <i class="fa fa-bars"></i>
+      </div>
+      <div class="navbar hide-nav">
+        <a href="#bio-heading">Bio</a>
+        <a href="#interests-heading">Interests</a>
+        <a href="#employment-heading">Employment</a>
+        <a href="#education-heading">Education</a>
+        <a href="#skills-heading">Skills</a>
+        <a href="#contact-heading">Contact</a>
+        <a href="#home">Home</a>
+      </div>
+    </nav>
+
+    <!-- Credit for background image: Christopher Gower (Unsplash)-->
+    <section class="name" id="home">
+      <div class="name-container">
+        <img src="./images/Johann_cropped.png" alt="Photo of Johann">
+        
+        <div class="credentials">
+          <h1>Johann Jansen van Vuuren</h1>
+          <h2>Web and software developer</h2>
+        </div>
+      </div>
+    </section>
+
+    <!-- A short biography. -->
+    <section class="bio" id="bio-heading">
+      <div class="bio-container">
+        <h1 class="fade-in">Short bio</h1>
+        <p>My career started as a BSc student, majoring in chemistry and biochemistry at the University of the Witwatersrand. It was also there that I had my first scientific position as laboratory assistant in the organic chemistry department. Before finishing my studies I was offered a position in the leading Pathology Laboratory in South Africa and spent the next 22 years working in clinical pathology.</p>
+        <br>
+        <p>Computer programming has been a hobby of mine throughout the years, starting at University and I soon realised that my heart yearns to work in the web and software development industry. After saving up enough life savings, I finally decided to take the plunge and resigned from my pathology career to pursue my dreams full time.</p>
+        <br>
+        <p>I am currently enrolled in HyperionDev’s Immersive Full-Stack and Software Engineer Boot-camp. Together with this formal skills development and my plethora of skills picked up over the years in the clinical pathology environment I believe that I would be an asset to any organisation. My employment interest is particularly in remote or even freelance working positions.</p>
+      </div>
+    </section>
+
+    <!-- Interests and hobbies section -->
+    <section class="interests" id="interests-heading">
+      <div class="interests-container">
+        <h1 class="fade-in">Interests</h1>
+        <p>In my free time I enjoy reading everything I can get my hands on. Subjects of interest are cosmology, quantum physics, astronomy, life sciences and medicine. My escapist genre of choice is fantasy and science fiction. </p>
+        <br>
+        <p>A big portion of my time is also spent coding and playing around with new software. This has always been a passion of mine.</p>
+        <br>
+        <p>I also have a keen interest in classical and contemporary classical music and my visual art forms of choice are ballet and contemporary dance. </p>
+      </div>
+    </section>
+
+    <!-- Employment history section using a table -->
+    <section class="employment" id="employment-heading">
+      <div class="employment-container">
+        <h1 class="fade-in">Employment History</h1>
+        <table>
+          <tbody>
+            <tr>
+              <th colspan="2">Self Employed</th>
+            </tr>
+            <tr>
+              <td>2020 - current</td>
+              <td>Web Development</td>
+            </tr>
+            <tr>
+              <th colspan="2" >Ampath National Laboratories</th>
+            </tr>
+            <tr>
+              <td>2016 - 2020</td>
+              <td>Area Marketer & Client Application Super User: East Rand</td>
+            </tr>
+            <tr>
+              <td>2006 - 2016</td>
+              <td>Hospital (Clinical) Marketer - Sunninghill Hospital</td>
+            </tr>
+            <tr>
+              <td>2003 - 2006</td>
+              <td>Client Services Manager</td>
+            </tr>
+            <tr>
+              <td>2000 - 2003</td>
+              <td>Laboratory Night Manager</td>
+            </tr>
+            <tr>
+              <td>1998 - 2000</td>
+              <td>Coordinating Technologist</td>
+            </tr>
+            <tr>
+              <th colspan="2">Wits Organic Synthesis Laboratory</th>
+            </tr>
+            <tr>
+              <td>1993 - 1994</td>
+              <td>Laboratory Assistant</td>
+            </tr>
+            <tr>
+              <th colspan="2">East Rand Medicine Supplies</th>
+            </tr>
+            <tr>
+              <td>1993 - 1998</td>
+              <td>Pharmacist's Assistant (Casual)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Education history section using a table again -->
+    <section class="education" id="education-heading">
+      <div class="education-container">
+        <h1 class="fade-in">Education</h1>
+        <table>
+          <thead>
+            <tr>
+              <th>Qualification</th>
+              <th>Institution</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Matriculation</td>
+              <td>Hoërskool Alberton, 1992</td>
+            </tr>
+            <tr>
+              <td>BSc (Biochemistry & Chemsitry)</td>
+              <td>University of the Witwatersrand, 1993 -1995 (not completed)</td>
+            </tr>
+            <tr>
+              <td>ISO / SANAS quality control</td>
+              <td>Ampath, 1998</td>
+            </tr>
+            <tr>
+              <td>Performance Management</td>
+              <td>Ampath, 2001</td>
+            </tr>
+            <tr>
+              <td>OHSA</td>
+              <td>Ampath, 2003</td>
+            </tr>
+            <tr>
+              <td>Management Development Diploma</td>
+              <td>Ampath / Damelin College, 2004</td>
+            </tr>
+            <tr>
+              <td>Certificate in Warfarin Anticoagulation Management</td>
+              <td>Wits Medical School, 2007</td>
+            </tr>
+            <tr>
+              <td>Repeated Recertification and Competency Evaluation: Laboratory Information Systems</td>
+              <td>Ampath, 1998 - 2020</td>
+            </tr>
+            <tr>
+              <td>Beginners Introduction to Web Development*</td>
+              <td>Udemy, 2021</td>
+            </tr>
+            <tr>
+              <td>Emmet in Visual Studio Code: Accelerate your HTML Workflow*</td>
+              <td>Udemy, 2021</td>
+            </tr>
+            <tr>
+              <td>Build Responsive Real World Websites with CSS3 v2.0*</td>
+              <td>Udemy, 2021</td>
+            </tr>
+            <tr>
+              <td>JavaScript 101: JavaScript for absolute beginners*</td>
+              <td>Udemy, 2021</td>
+            </tr>
+            <tr>
+              <td>Wordpress for Beginners - Master Wordpress Quickly</td>
+              <td>Udemy, 2021</td>
+            </tr>
+            <tr>
+              <td>jQuery Master: Build awesome websites*</td>
+              <td>Udemy, 2021</td>
+            </tr>
+            <tr>
+              <td>The Modern JavaScript Bootcamp*</td>
+              <td>Udemy, 2021</td>
+            </tr>
+            <tr>
+              <td>Responsive Real World Websites with HTML5 and CSS3*</td>
+              <td>Udemy, 2021</td>
+            </tr>
+            <tr>
+              <td>Complete Python Bootcamp From Zero to Hero in Python*</td>
+              <td>Udemy, 2021</td>
+            </tr>
+            <tr>
+              <td>Immersive Full-Stack & Software Engineer Boot Camp</td>
+              <td>HyperionDev, current</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="2">* Certificates of Completion</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </section>
+
+    <!-- Skills and competency section using lists with custom bullets -->
+    <section class="skills" id="skills-heading">
+      <div class="skills-container">
+        <h1 class="fade-in">Skills and Competencies</h1>
+        <h2>Information & Communication Technology</h2>
+        <ul class="skills-list">
+          <li>🔧 HTML5</li>
+          <li>🔧 CSS3</li>
+          <li>🔧 JavaScript</li>
+          <li>🔧 jQuery</li>
+          <li>🔧 Git (VCS)</li>
+          <li>🔧 Laboratory Information Systems Support</li>
+          <li>🔧 Laboratory Client Application Support</li>
+          <li>🔧 QlikView</li>
+          <li>🔧 Microsoft Office</li>
+          <li>🔧 LibreOffice</li>
+          <li>🔧 Google Office Suite</li>
+          <li>🔧 Pencil (Prototyping Software)</li>
+        </ul>
+        <h2>Other</h2>
+        <ul>
+          <li>🔧 Clinical Pathology</li>
+          <li>🔧 Laboratory Accreditation</li>
+          <li>🔧 Clinical Anticoagulant Management</li>
+          <li>🔧 Laboratory Operational Management</li>
+          <li>🔧 Budgetary Planning & Monitoring</li>
+          <li>🔧 Business Intelligence Collection (QlikView)</li>
+          <li>🔧 Tactical Resource Planning</li>
+          <li>🔧 Marketing</li>
+          <li>🔧 Corporate Branding Implementation</li>
+          <li>🔧 Public Relations and Customer Care</li>
+          <li>🔧 Conflict Resolution</li>
+          <li>🔧 Problem Solving & Troubleshooting</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Contact and social media links -->
+    <section class="contact" id="contact-heading">
+      <div class="contact-container">
+        <h1 class="fade-in">Contact Details</h1>
+        <div class="contact-details">
+          <div class="cell">Mobile: 084 596 7038</div>
+          <div class="email">Email: vanvuurenjohann124@gmail.com</div>
+        </div>
+        <div class="social-media">
+          <a href="https://www.facebook.com/johann.vanvuuren.167" target="_blank"><i class="fa fa-facebook"></i></a>
+          <a href="https://www.linkedin.com/in/johann-jansen-van-vuuren-33553273" target="_blank"><i class="fa fa-linkedin"></i></a>
+        </div>
+      </div>
+    </section>
+    <script src="./js/vanilla.js"></script>
+  </body>
+
+</html>

@@ -1,0 +1,231 @@
+nav {
+  .navbar {
+    a {
+      @include font(
+        $font-primary,
+        $colour1,
+        $colour5,
+        $font-size-normal,
+        $font-weight-bold
+      );
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+  }
+
+  .hamburger-navbar {
+    text-align: right;
+    font-size: $font-size-lg;
+    color: $colour1;
+  }
+}
+
+.name {
+  .credentials {
+
+    animation: rotateText 6s infinite linear;
+
+    h1 {
+      @include font(
+        $font-primary,
+        $colour1,
+        $transparent,
+        $font-size-lg,
+        $font-weight-bold
+      );
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    h2 {
+      @include font(
+        $font-primary,
+        $colour1,
+        $transparent,
+        $font-size-md,
+        $font-weight-bold
+      );
+      text-transform: uppercase;
+      text-align: center;
+    }
+  }
+}
+
+.bio-container {
+  h1 {
+    @include text-clip($font-weight-bold, $font-size-lg);
+    text-align: center;
+    margin-bottom: 2rem;
+    transition-duration: 4000ms;
+  }
+
+  p {
+    @include font(
+      $font-secondary,
+      $colour2,
+      $transparent,
+      $font-size-normal,
+      $font-weight-bold
+    );
+    letter-spacing: 1.5;
+    line-height: 1.5;
+  }
+}
+
+.interests {
+  .interests-container {
+    h1 {
+      @include font(
+        $font-primary,
+        $colour5,
+        $transparent,
+        $font-size-lg,
+        $font-weight-bold
+      );
+      text-transform: uppercase;
+      text-align: center;
+      margin-bottom: 2rem;
+      transition-duration: 4000ms;
+    }
+
+    p {
+      @include font(
+        $font-secondary,
+        $colour5,
+        $transparent,
+        $font-size-normal,
+        $font-weight-bold
+      );
+      letter-spacing: 1.5;
+      line-height: 1.5;
+    }
+  }
+}
+
+.employment-container {
+  h1 {
+    @include text-clip($font-weight-bold, $font-size-lg);
+    margin-bottom: 3rem;
+    transition-duration: 4000ms;
+  }
+
+  th {
+    @include font(
+      $font-primary,
+      $colour1,
+      $transparent,
+      $font-size-md,
+      $font-weight-bold
+    );
+    text-align: left;
+  }
+
+  tr {
+    @include font(
+      $font-secondary,
+      $colour2,
+      $transparent,
+      $font-size-normal,
+      $font-weight-bold
+    );
+  }
+}
+
+.education-container {
+  h1 {
+    @include font($font-primary, $colour5, $transparent, $font-size-lg, $font-weight-bold);
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+    transition-duration: 4000ms;
+  }
+
+  th {
+    @include font(
+      $font-primary,
+      $colour5,
+      $transparent,
+      $font-size-md,
+      $font-weight-bold
+    );
+    text-align: left;
+    text-transform: uppercase
+  }
+
+  tr {
+    @include font(
+      $font-secondary,
+      $colour3,
+      $transparent,
+      $font-size-xs,
+      $font-weight-bold
+    );
+  }
+}
+
+.skills-container {
+  h1 {
+    @include text-clip($font-weight-bold, $font-size-lg);
+    margin-bottom: 3rem;
+    transition-duration: 4000ms;
+  }
+
+  h2 {
+    @include text-clip($font-weight-bold, $font-size-md);
+    margin: 2rem 0;
+  }
+
+  li {
+    list-style: none;
+    @include font(
+      $font-secondary,
+      $colour1,
+      $transparent,
+      $font-size-sm,
+      $font-weight-normal
+    );
+  }
+}
+
+.contact {
+
+  h1 {
+    @include text-clip($font-secondary, $font-size-lg);
+    transition-duration: 4000ms;
+  }
+
+  .contact-details {
+    div {
+      @include font(
+        $font-primary,
+        $colour1,
+        $transparent,
+        $font-size-normal,
+        $font-weight-bold
+      );
+      margin: 3rem;
+    }
+  }
+
+  .social-media {
+    font-size: $font-size-lg;
+    color: $colour5;
+
+    a {
+      text-decoration: none;
+      color: $colour5;
+    }
+  }
+}
+
+.fade-in {
+  position: relative;
+  transform: translateY(-150px);
+  opacity: 0;
+  transition: 3s all ease;
+
+  &.active {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+

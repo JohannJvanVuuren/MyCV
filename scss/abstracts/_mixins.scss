@@ -1,0 +1,18 @@
+@mixin font ($family, $colour, $background, $size, $weight) {
+  font-family: $family;
+  color: $colour;
+  background-color: $background;
+  font-size: $size;
+  font-weight: $weight;
+}
+
+@mixin text-clip($weight, $size) {
+  background-image: url('../images/cubes.jpg');
+  background-repeat: repeat;
+  background-clip: text;
+  color: transparent;
+  text-transform: uppercase;
+  font-weight: $weight;
+  font-size: $size;
+  font-family: $font-primary;
+}
