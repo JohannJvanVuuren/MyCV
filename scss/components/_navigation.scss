@@ -1,23 +1,37 @@
 nav {
-
   .navbar {
-    z-index: 10;
     background-color: $colour5;
-    width: 14rem;
-    padding: 6px 0;
     border-radius: 1rem;
+    height: 40rem;
+    padding: 6px 0;
+    width: 15rem;
+    z-index: 10;
 
     a {
       border-radius: 1rem;
+      box-shadow: -3px -3px 5px $colour6, 3px 3px 5px $black-shadow;
       padding: 1rem;
-      width: 13rem;
       text-align: center;
+      width: 13rem;
 
+      &:hover {
+        color: $colour4;
+      }
+
+      &:active {
+        box-shadow: -1px -1px 2px $colour6, 1px 1px 2px $black-shadow;
+      }
     }
   }
 
   .hamburger-navbar {
+    border-radius: 1rem;
+    box-shadow: -3px -3px 5px $colour6, 3px 3px 5px $black-shadow;
     cursor: pointer;
     z-index: 10;
+
+    &:active {
+      box-shadow: -1px -1px 2px $colour6, 1px 1px 2px $black-shadow;
+    }
   }
 }

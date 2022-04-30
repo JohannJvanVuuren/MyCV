@@ -1,44 +1,44 @@
 .name {
   .name-container {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 100rem;
     height: 80vh;
+    justify-content: space-evenly;
     margin: 0 auto;
     padding-top: 5rem;
+    width: 100rem;
 
     img {
-      grid-area: 'image';
-      width: 15rem;
-      height: auto;
       align-self: center;
+      grid-area: 'image';
+      height: auto;
+      width: 15rem;
     }
   }
 }
 
 .bio-container {
-  padding: 10rem 0;
   margin: 0 auto;
+  padding: 10rem 0;
   width: 75rem;
 }
 
 .interests {
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: center;
 
   .interests-container {
-    width: 75rem;
     padding: 5rem;
+    width: 75rem;
   }
 }
 
 .employment-container {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   padding: 10rem 0;
 
@@ -52,9 +52,9 @@
   place-items: center;
 
   .education-container {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: space-evenly;
     padding: 5rem;
   }
@@ -65,9 +65,9 @@
   place-items: center;
 
   .skills-container {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: space-evenly;
   }
 }
@@ -77,16 +77,16 @@
   place-items: center;
 
   .contact-container {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    height: 30rem;
     justify-content: space-evenly;
     width: 75rem;
-    height: 30rem;
 
     .contact-details {
-      display: flex;
       align-items: center;
+      display: flex;
       justify-content: space-evenly;
       width: 100%;
 
@@ -97,14 +97,11 @@
     }
 
     .social-media {
+      align-items: center;
       display: flex;
       flex-direction: column;
-      align-items: center;
-      justify-content: space-evenly;
       height: 40rem;
-      
-    
-
+      justify-content: space-evenly;
     }
   }
 }

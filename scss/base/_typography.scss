@@ -4,7 +4,7 @@ nav {
       @include font(
         $font-primary,
         $colour1,
-        $colour5dark,
+        $colour5,
         $font-size-normal,
         $font-weight-bold
       );
@@ -14,15 +14,14 @@ nav {
   }
 
   .hamburger-navbar {
-    text-align: right;
-    font-size: $font-size-lg;
     color: $colour1;
+    font-size: $font-size-md;
+    text-align: right;
   }
 }
 
 .name {
   .credentials {
-
     animation: rotateText 6s infinite linear;
 
     h1 {
@@ -33,8 +32,8 @@ nav {
         $font-size-lg,
         $font-weight-bold
       );
-      text-transform: uppercase;
       text-align: center;
+      text-transform: uppercase;
     }
 
     h2 {
@@ -45,8 +44,8 @@ nav {
         $font-size-md,
         $font-weight-bold
       );
-      text-transform: uppercase;
       text-align: center;
+      text-transform: uppercase;
     }
   }
 }
@@ -54,8 +53,8 @@ nav {
 .bio-container {
   h1 {
     @include text-clip($font-weight-bold, $font-size-lg);
-    text-align: center;
     margin-bottom: 2rem;
+    text-align: center;
     transition-duration: 4000ms;
   }
 
@@ -82,9 +81,9 @@ nav {
         $font-size-lg,
         $font-weight-bold
       );
-      text-transform: uppercase;
-      text-align: center;
       margin-bottom: 2rem;
+      text-align: center;
+      text-transform: uppercase;
       transition-duration: 4000ms;
     }
 
@@ -133,9 +132,15 @@ nav {
 
 .education-container {
   h1 {
-    @include font($font-primary, $colour5, $transparent, $font-size-lg, $font-weight-bold);
-    text-transform: uppercase;
+    @include font(
+      $font-primary,
+      $colour5,
+      $transparent,
+      $font-size-lg,
+      $font-weight-bold
+    );
     margin-bottom: 3rem;
+    text-transform: uppercase;
     transition-duration: 4000ms;
   }
 
@@ -148,7 +153,7 @@ nav {
       $font-weight-bold
     );
     text-align: left;
-    text-transform: uppercase
+    text-transform: uppercase;
   }
 
   tr {
@@ -175,7 +180,6 @@ nav {
   }
 
   li {
-    list-style: none;
     @include font(
       $font-secondary,
       $colour1,
@@ -183,11 +187,11 @@ nav {
       $font-size-sm,
       $font-weight-normal
     );
+    list-style: none;
   }
 }
 
 .contact {
-
   h1 {
     @include text-clip($font-secondary, $font-size-lg);
     transition-duration: 4000ms;
@@ -207,25 +211,24 @@ nav {
   }
 
   .social-media {
-    font-size: $font-size-lg;
     color: $colour5;
+    font-size: $font-size-lg;
 
     a {
-      text-decoration: none;
       color: $colour5;
+      text-decoration: none;
     }
   }
 }
 
 .fade-in {
+  opacity: 0;
   position: relative;
   transform: translateY(-150px);
-  opacity: 0;
   transition: 3s all ease;
 
   &.active {
-    transform: translateY(0);
     opacity: 1;
+    transform: translateY(0);
   }
 }
-
